@@ -1,0 +1,145 @@
+.regulations-container {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #1a1a1a;
+  width: 100%;
+  overflow-x: hidden;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #e6e6e6;
+}
+
+.regulations-header {
+  background-color: #222222;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  border-bottom: 2px solid #f8cd00;
+}
+
+.regulations-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #f8cd00;
+}
+
+.regulations-content {
+  flex-grow: 1;
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.regulations-text {
+  background-color: #222222;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border: 1px solid #333;
+}
+
+.regulations-text h2 {
+  color: #f8cd00;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #444;
+}
+
+.regulations-text p {
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
+  color: #e6e6e6;
+}
+
+.regulations-text p:last-child {
+  margin-bottom: 0;
+}
+
+.regulations-text strong {
+  color: #f8cd00;
+  font-weight: 600;
+}
+
+.return-button-container {
+  padding: 1.5rem 2rem;
+  margin-top: auto;
+  text-align: center;
+}
+
+/* for buttons */
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-blue {
+  background-color: #f8cd00;
+  color: #000000;
+}
+
+.btn:hover {
+  background-color: #ffda44;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* for tablets */
+@media (max-width: 768px) {
+  .regulations-header {
+    padding: 1.25rem;
+  }
+
+  .regulations-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .regulations-content {
+    padding: 1.5rem;
+  }
+
+  .regulations-text {
+    padding: 1.5rem;
+  }
+}
+
+/* for phones */
+@media (max-width: 580px) {
+  .regulations-header {
+    padding: 1rem;
+  }
+
+  .regulations-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .regulations-content {
+    padding: 1rem;
+  }
+
+  .regulations-text {
+    padding: 1rem;
+  }
+
+  .regulations-text h2 {
+    font-size: 1.25rem;
+  }
+
+  .return-button-container {
+    padding: 1rem;
+  }
+}

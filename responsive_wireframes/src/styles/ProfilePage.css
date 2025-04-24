@@ -1,0 +1,576 @@
+.profile-container {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #1a1a1a; /* Dark background */
+  color: #e6e6e6; /* Light text for dark background */
+}
+
+/* Header styles */
+.header {
+  background-color: #222222; /* Darker black */
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 2px solid #f8cd00; /* Yellow border */
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #f8cd00; /* Yellow heading */
+}
+
+.top-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 1.5rem;
+  display: flex;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.profile-sidebar {
+  background-color: #222222; /* Darker black */
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  min-width: 250px;
+  box-sizing: border-box;
+  border: 1px solid #f8cd00; /* Yellow border */
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 1rem;
+}
+
+.avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: #f8cd00; /* Yellow background */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: #222222; /* Black text */
+  border: 3px solid #333333;
+}
+
+.profile-text {
+  text-align: center;
+  color: #cccccc; /* Light gray text */
+  margin-top: 0.5rem;
+}
+
+.bottom-section {
+  margin-top: auto;
+  padding-top: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+.bottom-section p {
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  color: #f8cd00; /* Yellow text */
+}
+
+.profile-details {
+  background-color: #222222; /* Darker black */
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  flex-grow: 1;
+  box-sizing: border-box;
+  border: 1px solid #f8cd00; /* Yellow border */
+}
+
+.section-title {
+  border-bottom: 1px solid #f8cd00; /* Yellow border */
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  color: #f8cd00; /* Yellow heading */
+}
+
+.info-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.field-group label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #f8cd00; /* Yellow label */
+  margin-bottom: 0.25rem;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-group input {
+  flex-grow: 1;
+  padding: 0.5rem;
+  border: 1px solid #f8cd00; /* Yellow border */
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #333333; /* Dark gray background */
+  color: #ffffff; /* White text */
+}
+
+.save-section {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  white-space: nowrap;
+  background-color: #f8cd00; /* Yellow background */
+  color: #000000; /* Black text */
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #ffda44; /* Lighter yellow on hover */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-small {
+  padding: 0.35rem 0.75rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #f8cd00; /* Yellow background */
+  color: #000000; /* Black text */
+  margin-left: 0.5rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.btn-small:hover {
+  background-color: #ffda44; /* Lighter yellow on hover */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* All specific button classes now just inherit from .btn */
+/* Remove underline from Link components */
+a, a:hover, a:visited, a:active {
+  text-decoration: none;
+}
+
+.btn-blue, .btn-green, .btn-red, .btn-purple {
+  /* No special styling needed as they all inherit from .btn */
+  background-color: #f8cd00 !important; /* Yellow background with !important */
+  color: #000000 !important; /* Black text with !important */
+  border: none !important;
+}
+
+.full-width {
+  width: 100%;
+}
+
+/* for use of resizing for tablets */
+@media (max-width: 992px) {
+  .main-content {
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  .profile-sidebar {
+    width: 40%;
+  }
+  
+  .profile-picture {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .avatar-placeholder {
+    font-size: 2rem;
+  }
+  
+  .field-group label {
+    font-size: 0.8rem;
+  }
+}
+
+/* for small tablets or large phones */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 0.5rem;
+    text-align: center;
+  }
+  
+  .header h1 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .main-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .profile-sidebar {
+    width: 100%;
+    min-width: auto;
+  }
+  
+  .profile-details {
+    width: 100%;
+  }
+  
+  .save-section {
+    justify-content: center;
+  }
+}
+
+/* for phones */
+@media (max-width: 580px) {
+  .top-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.35rem;
+  }
+  
+  .top-buttons button {
+    width: 100%;
+  }
+  
+  .profile-picture {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .avatar-placeholder {
+    font-size: 1.75rem;
+  }
+  
+  .main-content {
+    padding: 0.75rem;
+  }
+  
+  .profile-sidebar, 
+  .profile-details {
+    padding: 1rem;
+  }
+  
+  .input-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .btn-small {
+    margin-left: 0;
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+}
+
+/* Gambling Data Button */
+.gambling-data-btn {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn-yellow {
+  background-color: #f8cd00;
+  color: #000000;
+}
+
+/* Gambling Data Container */
+.gambling-data-container {
+  background-color: #222222;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  border: 1px solid #333;
+  overflow-y: auto;
+  max-height: 80vh; /* Makes container scrollable */
+}
+
+/* Stats Overview */
+.stats-overview {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #444;
+}
+
+.stat-value {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #f8cd00;
+  margin-bottom: 0.5rem;
+}
+
+.stat-value.profit {
+  color: #4caf50;
+}
+
+.stat-value.loss {
+  color: #f44336;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: #aaa;
+}
+
+/* Charts Section */
+.charts-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.chart-container {
+  background-color: #333333; /* Darker background for better contrast */
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  border: 1px solid #444;
+}
+
+.chart-container h3 {
+  color: #f8cd00;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+/* Bar Chart */
+.bar-chart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 250px;
+  padding-top: 1.5rem;
+}
+
+.bar-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.bar {
+  width: 80%;
+  max-width: 30px;
+  min-height: 2px;
+  position: relative;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+}
+
+.bar-value {
+  position: absolute;
+  top: -20px;
+  font-size: 0.75rem;
+  color: #f8cd00; /* Make values yellow for visibility */
+  font-weight: bold;
+}
+
+.profit-bar {
+  background-color: #4caf50;
+  align-self: center;
+  transform-origin: bottom;
+  border: 1px solid #222;
+}
+
+.loss-bar {
+  background-color: #f44336;
+  align-self: center;
+  transform-origin: bottom;
+  border: 1px solid #222;
+}
+
+.bar-label {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  color: #f8cd00; /* Make bar labels yellow */
+  font-weight: bold;
+}
+
+/* Pie Chart */
+.pie-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  height: 100%;
+}
+
+.pie-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #1a1a1a; /* Darker background for better contrast */
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.pie-slice {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: 50% 50%;
+  background: conic-gradient(
+    var(--slice-color) var(--start-angle),
+    var(--slice-color) var(--end-angle),
+    transparent var(--end-angle)
+  );
+}
+
+.pie-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.legend-color {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.legend-label {
+  color: #e6e6e6;
+}
+
+/* Responsible Gambling */
+.responsible-gambling {
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  padding: 1.25rem;
+  border-left: 4px solid #f8cd00;
+  margin-top: 1rem;
+}
+
+.responsible-gambling h3 {
+  color: #f8cd00;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.responsible-gambling p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #e6e6e6;
+  line-height: 1.5;
+}
+
+/* Make charts responsive */
+@media (max-width: 992px) {
+  .stats-overview {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .charts-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .stats-overview {
+    grid-template-columns: 1fr;
+  }
+  
+  .bar-chart {
+    height: 200px;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    width: 100%;
+    min-width: 500px; /* Ensure chart is wide enough to see all bars */
+  }
+  
+  .chart-container {
+    overflow-x: auto; /* Allow horizontal scrolling for chart containers */
+  }
+}
+
+/* fixes overflow issues */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  max-width: 100%;
+  box-sizing: border-box;
+  background-color: #1a1a1a; /* Dark background */
+}
+
+#root {
+  max-width: 100%;
+  overflow-x: hidden;
+}
