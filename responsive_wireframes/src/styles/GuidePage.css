@@ -1,0 +1,295 @@
+.guide-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #1a1a1a;
+    color: #e6e6e6;
+    font-family: Arial, sans-serif;
+  }
+  
+  .guide-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #f8cd00;
+    padding-bottom: 1rem;
+  }
+  
+  .guide-header h1 {
+    font-size: 2.5rem;
+    color: #f8cd00;
+  }
+  
+  .guide-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  .guide-section {
+    background-color: #222222;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .guide-section h2 {
+    color: #f8cd00;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.5rem;
+  }
+  
+  /* Odds Cards */
+  .odds-card {
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .odds-card h3 {
+    color: #f8cd00;
+    margin-bottom: 1rem;
+  }
+  
+  .odds-example {
+    display: flex;
+    gap: 1.5rem;
+    margin: 1rem 0;
+    justify-content: center;
+  }
+  
+  .odds-box {
+    width: 100px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 6px;
+  }
+  
+  .odds-box.positive {
+    background-color: #1e441e;
+    color: #4caf50;
+    border: 1px solid #388e3c;
+  }
+  
+  .odds-box.negative {
+    background-color: #441e1e;
+    color: #f44336;
+    border: 1px solid #d32f2f;
+  }
+  
+  .prob-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 6px;
+    width: 100px;
+  }
+  
+  .arrow {
+    color: #f8cd00;
+  }
+  
+  /* Bet Types Grid */
+  .bet-type-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .bet-type-card {
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    padding: 1.5rem;
+    height: 100%;
+  }
+  
+  .bet-type-card h3 {
+    color: #f8cd00;
+    margin-bottom: 0.75rem;
+  }
+  
+  .bet-example {
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+  }
+  
+  .odds {
+    color: #f8cd00;
+    font-weight: bold;
+    float: right;
+  }
+  
+  .bet-detail {
+    font-size: 0.9rem;
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  .parlay-odds {
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px dashed #555;
+  }
+  
+  /* Interface Cards */
+  .interface-card {
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .interface-card h3 {
+    color: #f8cd00;
+    margin-bottom: 0.75rem;
+  }
+  
+  .interface-card ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .interface-card li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .interface-image-placeholder {
+    background-color: #333;
+    border: 1px dashed #555;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    font-style: italic;
+    border-radius: 6px;
+    margin-top: 1rem;
+  }
+  
+  .best-odds-example {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .best-odds-option {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 0.75rem;
+    border-radius: 4px;
+    position: relative;
+  }
+  
+  .best-odds-option.best {
+    background-color: rgba(248, 205, 0, 0.1);
+    border: 1px solid #f8cd00;
+  }
+  
+  .best-badge {
+    position: absolute;
+    right: 5px;
+    top: -10px;
+    background-color: #f8cd00;
+    color: #000;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 0.1rem 0.5rem;
+    border-radius: 4px;
+  }
+  
+  /* Tips Section */
+  .tips-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .tip-card {
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    height: 100%;
+  }
+  
+  .tip-icon {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .tip-card h3 {
+    color: #f8cd00;
+    margin-bottom: 0.75rem;
+  }
+  
+  .tip-card p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  /* Return Button */
+  .return-button-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+  
+  .btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #2a2a2a;
+    color: #e6e6e6;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  
+  .btn:hover {
+    background-color: #333;
+  }
+  
+  .btn-yellow {
+    background-color: #f8cd00;
+    color: #000;
+  }
+  
+  .btn-yellow:hover {
+    background-color: #e6bf00;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .guide-container {
+      padding: 1rem;
+    }
+    
+    .guide-section {
+      padding: 1.5rem;
+    }
+    
+    .bet-type-grid,
+    .tips-container {
+      grid-template-columns: 1fr;
+    }
+    
+    .odds-example {
+      flex-direction: column;
+      align-items: center;
+    }
+  }

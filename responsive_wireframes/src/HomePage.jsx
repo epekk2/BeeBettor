@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './styles/HomePage.css';
+import LiveGamesTab from './LiveGamesTab.jsx'
+import './styles/LiveGamesTab.css';
 
-function HomePage() {
+function HomePage({ betSlip: propBetSlip = [], addToBetSlip: addedSlip, removeBet: removed, clearBetSlip: clearBet}) {
   const [activeTab, setActiveTab] = useState('featured');
   const [betSlip, setBetSlip] = useState([]);
   // Check if we're on mobile
@@ -12,6 +14,25 @@ function HomePage() {
   const [currentRiskAssessment, setCurrentRiskAssessment] = useState(null);
 
   const [betAmount, setBetAmount] = useState('');
+
+  // If using local state
+const [localBetSlip, setLocalBetSlip] = useState([]);
+
+// Use props or local state for bet slip management
+const effectiveBetSlip = betSlip.length > 0 ? betSlip : localBetSlip;
+
+// Function to handle adding to bet slip 
+const handleAddToBetSlip = (bet) => {
+  if (addToBetSlip) {
+    addToBetSlip(bet);
+  } else {
+    setLocalBetSlip(prev => {
+      const existingBet = prev.find(b => b.id === bet.id);
+      if (existingBet) return prev;
+      return [...prev, bet];
+    });
+  }
+};
 
   // Mock data for sports news
   const newsItems = [
@@ -181,9 +202,9 @@ function HomePage() {
 
   const calculateRiskLevel = (game) => {
     // In a real app, this would be a much more sophisticated algorithm
-    // that would consider odds disparity, team performance, injuries, etc.
+    // this is just mock information
     
-    // For now, we'll use a simple calculation based on the odds
+    // simple calculations for odds
     const homeOdds = parseFloat(game.odds.bestOdds.home.replace('+', ''));
     const awayOdds = parseFloat(game.odds.bestOdds.away.replace('+', ''));
     
@@ -266,11 +287,11 @@ function HomePage() {
       return;
     }
     
-    // Calculate potential winnings (simple calculation for demonstration)
+    // Calculate potential winnings 
     let potentialWinnings = 0;
     let odds = 0;
     
-    // Calculate based on American odds format
+    // Calculate 
     betSlip.forEach(bet => {
       const betOdds = parseFloat(bet.odds.replace('+', ''));
       if (bet.odds.startsWith('+')) {
@@ -340,30 +361,6 @@ function HomePage() {
           </div>
         </nav>
       )}
-
-      {/* Navigation Tabs */}
-      <div className="nav-tabs">
-        <button 
-          className={`tab-btn ${activeTab === 'featured' ? 'active' : ''}`}
-          onClick={() => setActiveTab('featured')}>
-          Featured
-        </button>
-        <button 
-          className={`tab-btn ${activeTab === 'live' ? 'active' : ''}`}
-          onClick={() => setActiveTab('live')}>
-          Live Games
-        </button>
-        <button 
-          className={`tab-btn ${activeTab === 'upcoming' ? 'active' : ''}`}
-          onClick={() => setActiveTab('upcoming')}>
-          Upcoming
-        </button>
-        <button 
-          className={`tab-btn ${activeTab === 'popular' ? 'active' : ''}`}
-          onClick={() => setActiveTab('popular')}>
-          Popular
-        </button>
-      </div>
 
       {/* Main Content */}
       <div className="main-content">

@@ -1,0 +1,213 @@
+.bet-slip {
+    width: 300px;
+    background-color: #222222;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: fit-content;
+  }
+  
+  .bet-slip-title {
+    font-size: 1.125rem;
+    color: #f8cd00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #333;
+  }
+  
+  .bet-count {
+    background-color: #f8cd00;
+    color: #000;
+    font-size: 0.75rem;
+    padding: 0.15rem 0.4rem;
+    border-radius: 50%;
+  }
+  
+  .empty-slip {
+    text-align: center;
+    padding: 2rem 0;
+    color: #888;
+  }
+  
+  .hint {
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+    color: #666;
+  }
+  
+  .bet-selections {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .bet-selection {
+    background-color: #2a2a2a;
+    border-radius: 6px;
+    padding: 0.75rem;
+  }
+  
+  .bet-selection-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+  
+  .remove-btn {
+    background: none;
+    border: none;
+    color: #888;
+    cursor: pointer;
+    font-size: 0.875rem;
+  }
+  
+  .remove-btn:hover {
+    color: #f00;
+  }
+  
+  .bet-selection-details {
+    font-size: 0.875rem;
+  }
+  
+  .bet-game {
+    color: #aaa;
+    margin-bottom: 0.25rem;
+  }
+  
+  .bet-pick {
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+  }
+  
+  .bet-odds-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .bet-odds {
+    color: #f8cd00;
+    font-weight: bold;
+  }
+  
+  .sportsbook-tag {
+    font-size: 0.7rem;
+    padding: 0.15rem 0.3rem;
+    background-color: #333;
+    border-radius: 3px;
+    color: #ccc;
+    text-transform: capitalize;
+  }
+  
+  .bet-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  
+  .input-group label {
+    font-size: 0.875rem;
+    color: #aaa;
+  }
+  
+  .amount-input {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .currency {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    background-color: #444;
+    color: #f8cd00;
+    font-weight: bold;
+  }
+  
+  .amount-input input {
+    flex: 1;
+    background-color: #333;
+    border: none;
+    padding: 0.5rem;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .amount-input input:focus {
+    outline: none;
+  }
+  
+  .potential-winnings {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    padding: 0.5rem 0;
+    border-top: 1px dashed #444;
+    margin-top: 0.5rem;
+  }
+  
+  .winnings-amount {
+    color: #f8cd00;
+    font-weight: bold;
+  }
+  
+  .place-bet-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #f8cd00;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .place-bet-btn:hover {
+    background-color: #ffda44;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .bet-options {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .btn-outline {
+    flex: 1;
+    padding: 0.5rem;
+    background-color: transparent;
+    border: 1px solid #f8cd00;
+    color: #f8cd00;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .btn-outline:hover {
+    background-color: rgba(248, 205, 0, 0.1);
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .bet-slip {
+      width: 100%;
+    }
+  }

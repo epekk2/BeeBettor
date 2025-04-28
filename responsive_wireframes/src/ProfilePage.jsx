@@ -83,9 +83,9 @@ function ProfilePage() {
       <header className="header">
         <h1>Profile Dashboard</h1>
         <div className="top-buttons">
-          <Link to="/home" className="btn btn-blue">Home</Link>
+          <Link to="/home" className="btn home-btn">Home</Link>
           <Link to="/bets" className="btn btn-blue">My Bets</Link>
-          <Link to="/" className="btn btn-red">Account</Link>
+          <Link to="/" className="btn account-btn">Account</Link>
         </div>
       </header>
 
@@ -114,6 +114,9 @@ function ProfilePage() {
             <p>Info on regulations changing based on state</p>
             <Link to="/regulations" className="btn btn-blue full-width">
                 View Regulations
+            </Link>
+            <Link to="/guide" className="btn btn-blue full-width">
+                View Guide
             </Link>
           </div>
         </div>
@@ -229,7 +232,6 @@ function ProfilePage() {
                 </div>
               </div>
               
-              {/* Improved Sports Distribution Pie Chart */}
               <div className="chart-container">
                 <h3>Sports Distribution</h3>
                 <div className="pie-chart">
@@ -257,7 +259,6 @@ function ProfilePage() {
                 </div>
               </div>
               
-              {/* Improved Bet Type Distribution Pie Chart */}
               <div className="chart-container">
                 <h3>Bet Type Distribution</h3>
                 <div className="pie-chart">
