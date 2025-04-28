@@ -1,0 +1,173 @@
+.sports-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  /* Sports Filters */
+  .sports-filters {
+    display: flex;
+    overflow-x: auto;
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .sport-filter-btn {
+    padding: 0.5rem 1rem;
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    border-radius: 4px;
+    color: #ccc;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s;
+  }
+  
+  .sport-filter-btn:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .sport-filter-btn.active {
+    background-color: #f8cd00;
+    color: #000;
+    border-color: #f8cd00;
+  }
+  
+  /* Sport Section */
+  .sport-section {
+    margin-bottom: 2rem;
+  }
+  
+  .section-title {
+    font-size: 1.25rem;
+    color: #f8cd00;
+    margin-bottom: 1rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid #333;
+  }
+  
+  /* View More Button */
+  .view-more-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .view-more-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: transparent;
+    border: 1px solid #f8cd00;
+    color: #f8cd00;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .view-more-btn:hover {
+    background-color: rgba(248, 205, 0, 0.1);
+  }
+  
+  /* Highlights Section */
+  .upcoming-highlights {
+    margin-top: 1.5rem;
+    background-color: #222222;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 300px;
+  }
+  
+  .highlights-title {
+    font-size: 1.125rem;
+    color: #f8cd00;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #333;
+  }
+  
+  .highlights-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .highlight-item {
+    padding: 0.75rem;
+    background-color: #2a2a2a;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .highlight-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+  }
+  
+  .highlight-league {
+    background-color: #444;
+    color: #f8cd00;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-weight: 500;
+  }
+  
+  .highlight-time {
+    color: #999;
+  }
+  
+  .highlight-teams {
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+  
+  .highlight-stat {
+    font-size: 0.85rem;
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  .highlight-btn {
+    padding: 0.5rem;
+    background-color: transparent;
+    border: 1px solid #f8cd00;
+    color: #f8cd00;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all 0.2s;
+    margin-top: 0.25rem;
+  }
+  
+  .highlight-btn:hover {
+    background-color: rgba(248, 205, 0, 0.1);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .bet-slip-and-highlights {
+      width: 100%;
+      order: -1;
+    }
+    
+    .upcoming-highlights {
+      width: 100%;
+      margin-bottom: 1.5rem;
+    }
+    
+    .sports-filters {
+      padding-bottom: 0.5rem;
+    }
+    
+    .sport-filter-btn {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.875rem;
+    }
+  }

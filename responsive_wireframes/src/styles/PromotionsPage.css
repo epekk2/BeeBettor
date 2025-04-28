@@ -1,0 +1,256 @@
+.promotions-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  /* Featured Promotions */
+  .featured-promotions {
+    margin-bottom: 2rem;
+  }
+  
+  .featured-title {
+    font-size: 1.5rem;
+    color: #f8cd00;
+    margin-bottom: 1rem;
+  }
+  
+  .featured-carousel {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .featured-promo-card {
+    min-width: 300px;
+    flex: 0 0 auto;
+    border-radius: 8px;
+    background-color: #222222;
+    border: 1px solid #333;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .promo-image-container {
+    height: 150px;
+    overflow: hidden;
+  }
+  
+  .promo-image-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(145deg, #2a2a2a, #333);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image-placeholder-text {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #f8cd00;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  
+  .featured-promo-content {
+    padding: 1rem;
+  }
+  
+  .featured-promo-content h3 {
+    font-size: 1.25rem;
+    color: #f8cd00;
+    margin-bottom: 0.5rem;
+  }
+  
+  .featured-promo-content p {
+    font-size: 0.9rem;
+    color: #e6e6e6;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+  }
+  
+  /* Promotion Filters */
+  .promotion-filters {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .filter-btn {
+    padding: 0.5rem 1rem;
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    border-radius: 4px;
+    color: #ccc;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s;
+  }
+  
+  .filter-btn:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .filter-btn.active {
+    background-color: #f8cd00;
+    color: #000;
+    border-color: #f8cd00;
+  }
+  
+  /* Promotions Grid */
+  .promotions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .promotion-card {
+    background-color: #222222;
+    border: 1px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .promotion-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .promotion-content {
+    padding: 1rem;
+  }
+  
+  .promo-title {
+    font-size: 1.1rem;
+    color: #f8cd00;
+    margin-bottom: 0.5rem;
+  }
+  
+  .promo-description {
+    font-size: 0.9rem;
+    color: #e6e6e6;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+  }
+  
+  .promo-details {
+    margin-bottom: 1rem;
+  }
+  
+  .promo-detail {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .detail-label {
+    color: #aaa;
+  }
+  
+  .detail-value {
+    color: #f8cd00;
+    font-weight: 500;
+  }
+  
+  .promo-terms {
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+  }
+  
+  .promo-terms summary {
+    color: #aaa;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+  }
+  
+  .promo-terms p {
+    color: #999;
+    line-height: 1.4;
+    padding: 0.5rem 0;
+  }
+  
+  .claim-btn {
+    width: 100%;
+    padding: 0.75rem;
+  }
+  
+  /* Terms Banner */
+  .terms-banner {
+    background-color: #2a2a2a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .terms-banner h3 {
+    font-size: 1.1rem;
+    color: #f8cd00;
+    margin-bottom: 0.75rem;
+  }
+  
+  .terms-banner p {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .btn-outline {
+    background-color: transparent;
+    border: 1px solid #f8cd00;
+    color: #f8cd00;
+    padding: 0.5rem 1.25rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .btn-outline:hover {
+    background-color: rgba(248, 205, 0, 0.1);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .promotions-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .featured-carousel {
+      scroll-snap-type: x mandatory;
+    }
+    
+    .featured-promo-card {
+      scroll-snap-align: start;
+      width: 85%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .featured-promo-card {
+      width: 100%;
+    }
+    
+    .promo-image-container {
+      height: 120px;
+    }
+    
+    .terms-banner {
+      padding: 1rem;
+    }
+  }
