@@ -81,6 +81,10 @@ function ProfilePage() {
     <div className="profile-container">
       {/* Header with buttons */}
       <header className="header">
+      <div className="logo">
+          <span className="logo-icon">🐝</span>
+          <h1>beeBettor</h1>
+        </div>
         <h1>Profile Dashboard</h1>
         <div className="top-buttons">
           <Link to="/home" className="btn home-btn">Home</Link>
